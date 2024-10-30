@@ -293,7 +293,7 @@ class KeywordExtractor :
         elif cnt == 'sh':
             cntV = list(nx.constraint(G).values())
         elif cnt == 'pr':
-            cntV = list(nx.pagerank_numpy(G).values())
+            cntV = list(nx.pagerank(G).values())
         elif cnt == 'bw':
             cntV = list(nx.betweenness_centrality(G).values())
         elif cnt == 'cl':
